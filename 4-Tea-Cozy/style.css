@@ -1,0 +1,36 @@
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+}
+
+/* Header section CSS */
+header {
+    display: flex;
+    position: fixed;
+    min-height: 69px;
+    width: 100%;
+    border-bottom: 1px solid seashell;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 50px;
+    margin-left: 10px;
+}
+
+nav {
+    justify-content: flex-end;
+    text-align: right;
+    float: right;
+}
+
+nav span {
+    display: inline-block;
+    padding: 0 20px;
+    text-decoration: underline;
+}
