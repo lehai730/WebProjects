@@ -1,4 +1,4 @@
-
+/* Universal tag rules */
 body {
     font-family: Helvetica, sans-serif;
     font-size: 22px;
@@ -15,9 +15,15 @@ a {
 h2,
 h3,
 h4 {
-  margin: 0;
-  padding: 10px;
+    margin: 0;
+    padding: 10px;
 }
+
+figure, figcaption {
+    padding: 10px;
+}
+
+
 
 /* Header section CSS */
 header {
@@ -79,5 +85,20 @@ nav span {
     flex-direction: column;
 }
 
+.item-flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item-flex-container img {
+    width: 300px;
+    height: 200px;
+    margin: auto auto 10px auto;
+}
+
+.item-flex-container figcaption {
+    font-weight: bold;
+}
 
 
