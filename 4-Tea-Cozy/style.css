@@ -1,3 +1,4 @@
+
 body {
     font-family: Helvetica, sans-serif;
     font-size: 22px;
@@ -5,6 +6,13 @@ body {
     background-color: black;
     opacity: 0.9;
     text-align: center;
+}
+
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 10px;
 }
 
 /* Header section CSS */
@@ -16,6 +24,8 @@ header {
     border-bottom: 1px solid seashell;
     align-items: center;
     justify-content: space-between;
+    background-color: black;
+    z-index: 1;
 }
 
 .logo {
@@ -34,3 +44,26 @@ nav span {
     padding: 0 20px;
     text-decoration: underline;
 }
+
+/* Mission Section */
+section.mission {
+    height: 700px;
+    padding-top: 70px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    background-image: url(resources/img-mission-background.jpg);
+}
+
+.m-container {
+    height: fit-content;
+    width: 100%;
+    justify-content: center;
+    background-color: black;
+    margin: auto;
+}
+
+
+
