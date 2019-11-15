@@ -140,3 +140,10 @@ nav span {
 .container h3 {
     margin: 15px 0;
 }
+
+/* Contact Section */
+.contact {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
