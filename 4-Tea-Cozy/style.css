@@ -7,6 +7,9 @@ body {
     opacity: 0.9;
     text-align: center;
 }
+a {
+    color: seashell;
+}
 
 h2,
 h3,
@@ -46,10 +49,10 @@ nav span {
 }
 
 /* Mission Section */
-section.mission {
+#mission {
     height: 700px;
     padding-top: 70px;
-    width: 90%;
+    max-width: 1200px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -64,6 +67,7 @@ section.mission {
     background-color: black;
     margin: auto;
 }
+
 
 
 
