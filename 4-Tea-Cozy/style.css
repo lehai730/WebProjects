@@ -1,5 +1,5 @@
 /* Universal tag rules */
-body {
+body, a {
     font-family: Helvetica, sans-serif;
     font-size: 22px;
     color: seashell;
@@ -8,9 +8,6 @@ body {
     text-align: center;
 }
 
-a {
-    color: seashell;
-}
 
 h2,
 h3,
