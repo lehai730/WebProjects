@@ -1,0 +1,155 @@
+/* Universal tag rules */
+body, a {
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+}
+
+
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 10px;
+}
+
+figure, figcaption {
+    padding: 10px;
+}
+
+
+
+/* Header section CSS */
+header {
+    display: flex;
+    position: fixed;
+    min-height: 69px;
+    width: 100%;
+    border-bottom: 1px solid seashell;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    z-index: 1;
+}
+
+.logo {
+    height: 50px;
+    margin-left: 10px;
+}
+
+nav {
+    justify-content: flex-end;
+    text-align: right;
+    float: right;
+}
+
+nav span {
+    display: inline-block;
+    padding: 0 20px;
+    text-decoration: underline;
+}
+
+/* START MAIN */
+/* Mission Section */
+#mission {
+    height: 700px;
+    padding-top: 70px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    background-image: url(resources/img-mission-background.jpg);
+}
+
+.m-container {
+    height: fit-content;
+    width: 100%;
+    justify-content: center;
+    background-color: black;
+    margin: auto;
+}
+
+/* Feature (aka Store) Section */
+#feature {
+    max-width: 1000px;
+    height: fit-content;
+    margin: auto;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item-flex-container img {
+    width: 300px;
+    height: 200px;
+    margin: auto auto 10px auto;
+}
+
+.item-flex-container figcaption {
+    font-weight: bold;
+}
+
+/* Location Section */
+#location {
+    padding-top: 70px;
+    min-height: 500px;
+    background-image: url(resources/img-locations-background.jpg);
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-position: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+}
+
+#location h2 {
+    margin-bottom: 15px;
+}
+
+.location-flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.location-flex-container .container {
+    width: 300px;
+    background-color: black;
+    padding: 10px;
+    margin: 20px 20px;
+    opacity: 1;
+}
+
+.container h4 {
+    font-weight: normal;
+    margin: 15px 0;
+}
+
+.container h3 {
+    margin: 15px 0;
+}
+/* END MAIN */
+
+/* Contact Section */
+.contact {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer Section */
+footer {
+    margin: 20px;
+    text-align: left;
+}
