@@ -55,6 +55,7 @@ nav span {
     text-decoration: underline;
 }
 
+/* START MAIN */
 /* Mission Section */
 #mission {
     height: 700px;
@@ -112,6 +113,7 @@ nav span {
     margin: auto;
     display: flex;
     flex-direction: column;
+    background-size: cover;
 }
 
 #location h2 {
@@ -140,10 +142,17 @@ nav span {
 .container h3 {
     margin: 15px 0;
 }
+/* END MAIN */
 
 /* Contact Section */
 .contact {
     height: 200px;
     display: flex;
     flex-direction: column;
+}
+
+/* Footer Section */
+footer {
+    margin: 20px;
+    text-align: left;
 }
