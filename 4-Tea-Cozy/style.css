@@ -101,4 +101,42 @@ nav span {
     font-weight: bold;
 }
 
+/* Location Section */
+#location {
+    padding-top: 70px;
+    min-height: 500px;
+    background-image: url(resources/img-locations-background.jpg);
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-position: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
 
+#location h2 {
+    margin-bottom: 15px;
+}
+
+.location-flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.location-flex-container .container {
+    width: 300px;
+    background-color: black;
+    padding: 10px;
+    margin: 20px 20px;
+    opacity: 1;
+}
+
+.container h4 {
+    font-weight: normal;
+    margin: 15px 0;
+}
+
+.container h3 {
+    margin: 15px 0;
+}
