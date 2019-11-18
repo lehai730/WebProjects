@@ -24,9 +24,31 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 
 
 // Add your functions below:
+/*valudateCred(array): returns true when an array contains digits 
+of a valid credit card number aned false when it is invalid */
+function validateCred(array = []) {
+    let sum = 0;
+    let toggle = false;
+    for (let i = array.length - 1; i >= 0 ; i--) {
+        if (toggle === true) {
+            if ((2*array[i]) > 9) {
+                sum += 2*array[i] - 9;
+                toggle = !toggle;
+            } else {
+                sum += 2*array[i];
+                toggle = !toggle;
+            }
+        } else {
+            sum += array[i];
+            toggle = !toggle;
+        }
+    }
+    return (sum % 10 === 0);
+}
 
+/* idInvalidCardCompanies(firstDigit): find the company name by using the firstDigit argument */
 
-
+console.log(validateCred(mystery5));
 
 
 
