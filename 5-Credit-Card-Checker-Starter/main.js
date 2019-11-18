@@ -62,11 +62,41 @@ const findInvalidCards = ccArray => {
 /* idInvalidCardCompanies(firstDigit): find the company name by using the firstDigit argument 
 input: nested array of invalid numbers
 output: array of companies (no duplicates)*/
-const idInvalidCardCompanies = firstDigit => {
-    
-    return
+const idInvalidCardCompanies = invalidArray => {
+    const companiesName = ['Amex (American Express)', 'Visa', 'Mastercard', 'Discover', 'Company not found'];
+    const companies = [];
+    for (let i = 0; i < invalidArray.length; i++) {
+        switch (invalidArray[i][0]) {
+            case 3:
+                if (companies.indexOf(companiesName[0]) === -1){
+                    companies.push(companiesName[0]);
+                }
+                break;
+            case 4:
+                if (companies.indexOf(companiesName[1]) === -1) {
+                    companies.push(companiesName[1]);
+                }
+                break;
+            case 5:
+                if (companies.indexOf(companiesName[2]) === -1) {
+                    companies.push(companiesName[2]);
+                }
+                break;
+            case 6:
+                if (companies.indexOf(companiesName[3]) === -1) {
+                    companies.push(companiesName[3]);
+                }
+                break;
+            default:
+                console.log('Company not found');
+        }
+    }
+    return companies;
 }
-console.log(findInvalidCards(batch));
+
+console.log(idInvalidCardCompanies([invalid1])); // Should print['visa']
+console.log(idInvalidCardCompanies([invalid2])); // Should print ['mastercard']
+console.log(idInvalidCardCompanies(findInvalidCards(batch)));
 
 
 
