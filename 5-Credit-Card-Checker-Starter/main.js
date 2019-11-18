@@ -45,10 +45,28 @@ function validateCred(array = []) {
     }
     return (sum % 10 === 0);
 }
+/* findInvalidCards( ccArray): check through the nested array for which numbers are invalid
+input: nested credit card array
+output: nested array of invalid cards
+*/
+const findInvalidCards = ccArray => {
+    const invalidCC = [];
+    for(let i = 0; i < ccArray.length; i++){
+        if (!validateCred(ccArray[i])){
+            invalidCC.push(ccArray[i])
+        }
+    }
+    return invalidCC;
+}
 
-/* idInvalidCardCompanies(firstDigit): find the company name by using the firstDigit argument */
-
-console.log(validateCred(mystery5));
+/* idInvalidCardCompanies(firstDigit): find the company name by using the firstDigit argument 
+input: nested array of invalid numbers
+output: array of companies (no duplicates)*/
+const idInvalidCardCompanies = firstDigit => {
+    
+    return
+}
+console.log(findInvalidCards(batch));
 
 
 
